@@ -1,5 +1,5 @@
 // Cosmocalc CM1 – fonctionnement hors ligne. Change la version à chaque mise à jour du site.
-const CACHE = 'cosmocalc-cm1-v1';
+const CACHE = 'cosmocalc-cm1-v4';
 const FILES = ['./', './index.html', './manifest.webmanifest', './apple-touch-icon.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
